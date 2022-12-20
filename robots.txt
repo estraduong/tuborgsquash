@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tuborgsquash *
+
+Allow: /public_html
+
+Sitemap: https://tuborgsquash.estraduong.dk/sitemap.xml

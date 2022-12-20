@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans',sans-serif;  
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f15a24;
+}
+
+/*Navbar Burger Menu Mobile - Start */
+
+header {
+    background-color: #0071bc;
+    height: 150px;
+    display: grid;
+    align-items: center;
+}
+
+.heading-desk{
+    display: none;
+}
+
+.nav-shop img {
+    width: 50px;
+}
+
+a.nav-shop {
+    justify-content: center;
+}
+
+.nav-branding img {
+    width: 140px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.kobskurv img {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: block;
+    order: 2;
+}
+
+.nav-branding {
+    order: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 150px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0071bc;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+/* Navbar Burger Menu Mobile - End */
+
+/* Main Content - Start*/
+
+.helping img{
+    width: 100%;
+    display: block;
+}
+
+.squashconnectsmobile {
+    text-align: center;
+    margin: 0;
+}
+
+.infographic img {
+    display: block;
+    width: 100%;
+}
+
+.squashconnectsmobile-text {
+    padding: 20px;
+}
+
+.squashconnectsmobile-text h1 {
+    padding-top: 15px;
+    font-size: x-large;
+    color: black;
+}
+
+.squashconnectsmobile-text h2 {
+    padding-top: 8px;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.squashconnectsmobile-text p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.sukkerfri {
+    height: 100%;
+}
+
+.frivillig-text {
+    background-color: #39b54a;
+    padding:20px;
+    background-image: url(/img/squashconnectstexture.png);
+    background-size: 200px;
+}
+
+.frivillig-text h2 {
+    padding-top: 15px;
+    font-size: x-large;
+}
+
+.frivillig-text h3 {
+    padding-top: 8px;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.frivillig-text p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.squashconnects-grid{
+    display: none;
+}
+
+/*Main Content - End*/
+
+
+
+
+/*Footer - Start*/
+
+footer {
+    background-color: #0071bc;
+}
+
+footer h2 {
+text-align: center;
+padding-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-grid {
+    display:grid;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+
+.info-grid {
+    display: none;
+}
+
+/* MEDIA QUIERIES */
+
+
+
+/* Tablet Size */
+
+@media (min-width:540px) {
+
+    body{
+        width: 100%;
+    }
+
+    header{
+        background-color: #0071bc;
+        display: grid;
+        align-items: center;
+    }
+
+    .nav-branding{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer{
+        background: #f15a24;
+    }
+
+    footer h2{
+        color: white;
+    }
+}
+
+@media (min-width:740px) {
+
+    body {
+        width:100%;
+    }
+
+
+
+}
+
+/* Desktop Sizes*/
+
+@media (min-width:965px) {
+    body {
+        width: 100%;
+    }
+
+    .empty{
+        display: none;
+      }
+    
+      .navbar{
+        display: flex
+      }
+    
+      .hamburger{
+        display: none;
+      }
+
+      .nav-shop img {
+        display: none;
+      }
+    
+      .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        order: 1;
+      }
+    
+      header{
+        height: 100px;
+      }
+    
+      .nav-branding img{
+        width: 130px;
+        position: relative;
+      }
+      
+      .nav-menu {
+        display:flex;
+        gap: 40px;
+        left: 0%;
+        flex-direction: row;
+        position: static;
+        order: 2;
+        width: auto;
+        font-size: 20px;
+      }
+
+      .nav-item a{
+        color: white;
+      }
+    
+      .nav-link:hover {
+        background-color:#fbb03b;
+        color: black;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .nav-link {
+        transition: 0.7s ease;
+    }
+
+    .navbar{
+        padding: 0 150px ;
+    }
+
+    .kobskurv img{
+        display: flex;
+        padding-bottom: 8px;
+    }
+
+    .kobskurv:hover{
+        background-color: #fbb03b;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .kobskurv {
+        transition: 0.7s ease;
+    }
+
+    .squashconnectsmobile {
+        display: none;
+    }
+
+    .squashconnects img{
+        width: 100%;
+    }
+
+    .squashconnects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .squashconnects p{
+        color: black;
+        padding-top: 10px;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: small;
+    }
+
+    .squashconnects h3 {
+        color: white;
+        font-weight: 400;
+        font-size: x-large;
+    }
+
+    .squashconnects-text {
+        background-color: #f15a24;
+        text-align: center;
+    }
+
+    .squashconnects-text h2 {
+        padding-top: 20px;
+        font-size: xx-large;
+        padding-bottom: 10px;
+        font-weight: 550;
+    }
+
+    .squashconnects-text2 {
+        background-image: url(/img/squashconnectstexture.png);
+        background-size:contain;
+        text-align: center;
+        background-color: #39b54a;
+    }
+
+    .squashconnects-text2 h2{
+        padding-top: 20px;
+        font-size: xx-large;
+        padding-bottom: 10px;
+        font-weight: 550;
+    }
+
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        background-color: #0071bc;
+    }
+
+    .info-grid h3 {
+        color: white;
+        padding-top: 30px;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .info-grid p {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 50px;
+        color: white;
+    }
+
+    .info-grid p img {
+        padding: 0px 10px 0px 10px;
+    } 
+
+    .info-grid img{
+        width: 10%;
+    }
+
+    footer {
+        background-color: #0071bc;
+    }
+
+    footer .mobile-footer {
+        display:none;
+    }
+}
+
+@media (min-width:1440px) {
+
+    body {
+        width: 100%;
+    }
+
+    .squashconnects p{
+        color:black;
+        padding:30px;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size:larger;
+    }
+
+}
+
+@media (min-width:1920px) {
+
+    body{
+        width: 100%;
+    }
+}
